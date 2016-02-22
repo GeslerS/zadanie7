@@ -18,7 +18,7 @@
     <http use-expressions="true" auto-config="false" >
         <csrf disabled="true" />
       <intercept-url pattern="/home" access="hasRole('ROLE_USER')" />
-      <form-login login-page="/login" default-target-url="/home" authentication-failure-url="/login?error" />
+      <form-login login-page="/login" default-target-url="/home" authentication-failure-url="/wrong" />
     </http>
 
     <authentication-manager>
