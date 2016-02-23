@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee
    http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
 
-<!--Spring Application Context location-->
+
   <context-param>
     <param-name>contextConfigLocation</param-name>
     <param-value>
@@ -12,7 +12,7 @@
     </param-value>
   </context-param>
 
-  <!--Spring Config-->
+
   <servlet>
     <servlet-name>dispatcher</servlet-name>
     <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
@@ -23,12 +23,12 @@
     <url-pattern>/</url-pattern>
   </servlet-mapping>
 
-  <!--Spring Listener-->
+
   <listener>
     <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
   </listener>
 
-  <!--Spring Security Filter-->
+
   <filter>
     <filter-name>springSecurityFilterChain</filter-name>
     <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
