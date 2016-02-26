@@ -12,8 +12,6 @@ import pl.sagiton.repository.UserService;
 @Controller
 public class HelloController {
 
-    @Autowired
-    UserService userService;
 
     @RequestMapping(value = "/home", method = RequestMethod.GET)
     public String homePage(){
